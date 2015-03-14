@@ -13,6 +13,8 @@
 		B96CDC041AB3D70200F97E8D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B96CDC031AB3D70200F97E8D /* Images.xcassets */; };
 		B96CDC071AB3D70200F97E8D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B96CDC051AB3D70200F97E8D /* LaunchScreen.xib */; };
 		B96CDC131AB3D70200F97E8D /* DelegateDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B96CDC121AB3D70200F97E8D /* DelegateDemoTests.m */; };
+		B96CDC1E1AB3D7C800F97E8D /* KCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B96CDC1D1AB3D7C800F97E8D /* KCButton.m */; };
+		B96CDC211AB3E04E00F97E8D /* MyListener.m in Sources */ = {isa = PBXBuildFile; fileRef = B96CDC201AB3E04E00F97E8D /* MyListener.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,10 @@
 		B96CDC0C1AB3D70200F97E8D /* DelegateDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DelegateDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B96CDC111AB3D70200F97E8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B96CDC121AB3D70200F97E8D /* DelegateDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelegateDemoTests.m; sourceTree = "<group>"; };
+		B96CDC1C1AB3D7C800F97E8D /* KCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCButton.h; sourceTree = "<group>"; };
+		B96CDC1D1AB3D7C800F97E8D /* KCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCButton.m; sourceTree = "<group>"; };
+		B96CDC1F1AB3E04E00F97E8D /* MyListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyListener.h; sourceTree = "<group>"; };
+		B96CDC201AB3E04E00F97E8D /* MyListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyListener.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,10 @@
 				B96CDC051AB3D70200F97E8D /* LaunchScreen.xib */,
 				B96CDC001AB3D70200F97E8D /* DelegateDemo.xcdatamodeld */,
 				B96CDBF91AB3D70200F97E8D /* Supporting Files */,
+				B96CDC1C1AB3D7C800F97E8D /* KCButton.h */,
+				B96CDC1D1AB3D7C800F97E8D /* KCButton.m */,
+				B96CDC1F1AB3E04E00F97E8D /* MyListener.h */,
+				B96CDC201AB3E04E00F97E8D /* MyListener.m */,
 			);
 			path = DelegateDemo;
 			sourceTree = "<group>";
@@ -213,9 +223,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B96CDC211AB3E04E00F97E8D /* MyListener.m in Sources */,
 				B96CDBFF1AB3D70200F97E8D /* AppDelegate.m in Sources */,
 				B96CDBFC1AB3D70200F97E8D /* main.m in Sources */,
 				B96CDC021AB3D70200F97E8D /* DelegateDemo.xcdatamodeld in Sources */,
+				B96CDC1E1AB3D7C800F97E8D /* KCButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "KCButton.h"
+#import "MyListener.h"
 @interface AppDelegate ()
 
 @end
@@ -16,6 +17,18 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    
+    KCButton *button=[[KCButton alloc]init];
+    MyListener *listener=[[MyListener alloc]init];
+    button.delegate=listener;
+    [button click];
+    /* 结果：
+     Invoke KCButton's click method.
+     Invoke MyListener's onClick method.The button is:<KCButton: 0x1001034c0>.
+     */
+    
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
