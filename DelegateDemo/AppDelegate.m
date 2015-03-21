@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "KCButton.h"
 #import "MyListener.h"
+#import "BlockButton.h"
 @interface AppDelegate ()
 
 @end
@@ -28,6 +29,12 @@
      Invoke MyListener's onClick method.The button is:<KCButton: 0x1001034c0>.
      */
     
+    
+    BlockButton *blockbutton=[[BlockButton alloc]init];
+    blockbutton.onClick=^(BlockButton *btn){
+        NSLog(@"Invoke onClick method.The button is:%@.",btn);
+    };
+    [blockbutton click];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.

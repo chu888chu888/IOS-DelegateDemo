@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B92D3E461AB3ED5B00606BFC /* BlockButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B92D3E451AB3ED5B00606BFC /* BlockButton.m */; };
 		B96CDBFC1AB3D70200F97E8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B96CDBFB1AB3D70200F97E8D /* main.m */; };
 		B96CDBFF1AB3D70200F97E8D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B96CDBFE1AB3D70200F97E8D /* AppDelegate.m */; };
 		B96CDC021AB3D70200F97E8D /* DelegateDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B96CDC001AB3D70200F97E8D /* DelegateDemo.xcdatamodeld */; };
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B92D3E441AB3ED5B00606BFC /* BlockButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockButton.h; sourceTree = "<group>"; };
+		B92D3E451AB3ED5B00606BFC /* BlockButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockButton.m; sourceTree = "<group>"; };
 		B96CDBF61AB3D70200F97E8D /* DelegateDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DelegateDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B96CDBFA1AB3D70200F97E8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B96CDBFB1AB3D70200F97E8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -63,6 +66,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B92D3E421AB3ED3200606BFC /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				B96CDC1C1AB3D7C800F97E8D /* KCButton.h */,
+				B96CDC1D1AB3D7C800F97E8D /* KCButton.m */,
+				B96CDC1F1AB3E04E00F97E8D /* MyListener.h */,
+				B96CDC201AB3E04E00F97E8D /* MyListener.m */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		B92D3E431AB3ED4000606BFC /* Block */ = {
+			isa = PBXGroup;
+			children = (
+				B92D3E441AB3ED5B00606BFC /* BlockButton.h */,
+				B92D3E451AB3ED5B00606BFC /* BlockButton.m */,
+			);
+			name = Block;
+			sourceTree = "<group>";
+		};
 		B96CDBED1AB3D70200F97E8D = {
 			isa = PBXGroup;
 			children = (
@@ -84,16 +107,14 @@
 		B96CDBF81AB3D70200F97E8D /* DelegateDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B92D3E431AB3ED4000606BFC /* Block */,
+				B92D3E421AB3ED3200606BFC /* Delegate */,
 				B96CDBFD1AB3D70200F97E8D /* AppDelegate.h */,
 				B96CDBFE1AB3D70200F97E8D /* AppDelegate.m */,
 				B96CDC031AB3D70200F97E8D /* Images.xcassets */,
 				B96CDC051AB3D70200F97E8D /* LaunchScreen.xib */,
 				B96CDC001AB3D70200F97E8D /* DelegateDemo.xcdatamodeld */,
 				B96CDBF91AB3D70200F97E8D /* Supporting Files */,
-				B96CDC1C1AB3D7C800F97E8D /* KCButton.h */,
-				B96CDC1D1AB3D7C800F97E8D /* KCButton.m */,
-				B96CDC1F1AB3E04E00F97E8D /* MyListener.h */,
-				B96CDC201AB3E04E00F97E8D /* MyListener.m */,
 			);
 			path = DelegateDemo;
 			sourceTree = "<group>";
@@ -224,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B96CDC211AB3E04E00F97E8D /* MyListener.m in Sources */,
+				B92D3E461AB3ED5B00606BFC /* BlockButton.m in Sources */,
 				B96CDBFF1AB3D70200F97E8D /* AppDelegate.m in Sources */,
 				B96CDBFC1AB3D70200F97E8D /* main.m in Sources */,
 				B96CDC021AB3D70200F97E8D /* DelegateDemo.xcdatamodeld in Sources */,
@@ -410,6 +432,7 @@
 				B96CDC181AB3D70200F97E8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B96CDC191AB3D70200F97E8D /* Build configuration list for PBXNativeTarget "DelegateDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +441,7 @@
 				B96CDC1B1AB3D70200F97E8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
